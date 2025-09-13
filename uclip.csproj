@@ -28,8 +28,17 @@
         <PackageLicenseFile>LICENSE</PackageLicenseFile>
         <Description>Simple clipboard tool that supports UTF8 text. Designed to work much like clip.exe does.</Description>
         <Version>1.0.0</Version>
+        <PackageReleaseNotes>
+            Simple clipboard tool that supports UTF8 text. Designed to work much like clip.exe does.
+            Working initial version.
+            Targeting Native AOT for win-x64 only.
+        </PackageReleaseNotes>
         <Authors>Mino</Authors>
         <Company>Mino One</Company>
+        <RepositoryUrl>https://github.com/Minoxs/uclip</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/Minoxs/uclip</PackageProjectUrl>
+        <PackageTags>clipboard;tool;net10.0;native-aot</PackageTags>
+        <Copyright>Copyright (c) Mino 2025</Copyright>
     </PropertyGroup>
 
     <ItemGroup>
