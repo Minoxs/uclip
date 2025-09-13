@@ -24,10 +24,17 @@
         <AssemblyName>uclip</AssemblyName>
         <PackageId>one.mino.uclip</PackageId>
         <ToolCommandName>uclip</ToolCommandName>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
         <Description>Simple clipboard tool that supports UTF8 text. Designed to work much like clip.exe does.</Description>
         <Version>1.0.0</Version>
         <Authors>Mino</Authors>
         <Company>Mino One</Company>
     </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="README.md" Pack="true" PackagePath="/"/>
+        <None Include="LICENSE" Pack="true" PackagePath=""/>
+    </ItemGroup>
 
 </Project>
