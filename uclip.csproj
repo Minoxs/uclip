@@ -2,19 +2,32 @@
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <PackAsTool>true</PackAsTool>
-        <TargetFramework>net9.0</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
+        <TargetFramework>net10.0</TargetFramework>
         <Nullable>enable</Nullable>
         <InvariantGlobalization>true</InvariantGlobalization>
+
+        <!-- Publishing a tool -->
+        <IsPackable>true</IsPackable>
+        <PackAsTool>true</PackAsTool>
+
+        <!-- Target only win-x64 -->
+        <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+        <PublishSelfContained>true</PublishSelfContained>
+        <PublishTrimmed>true</PublishTrimmed>
         <PublishAot>true</PublishAot>
+        <StripSymbols>true</StripSymbols>
+
+        <!-- Calling native windows DLLs -->
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 
-        <ProductName>uclip</ProductName>
+        <!-- Package information -->
+        <AssemblyName>uclip</AssemblyName>
+        <PackageId>one.mino.uclip</PackageId>
         <ToolCommandName>uclip</ToolCommandName>
         <Description>Simple clipboard tool that supports UTF8 text. Designed to work much like clip.exe does.</Description>
         <Version>1.0.0</Version>
         <Authors>Mino</Authors>
+        <Company>Mino One</Company>
     </PropertyGroup>
 
 </Project>
