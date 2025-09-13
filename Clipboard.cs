@@ -19,7 +19,7 @@ public static partial class Clipboard {
 
     public static bool SetData(string value) {
         const int cfUnicode = 13;
-        IntPtr data = Marshal.StringToHGlobalUni(value);
+        IntPtr data = Marshal.StringToHGlobalUni(value + "");
         return SetClipboardData(cfUnicode, data) != 0;
     }
 }
