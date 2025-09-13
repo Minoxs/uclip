@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <PackAsTool>true</PackAsTool>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <InvariantGlobalization>true</InvariantGlobalization>
+        <PublishAot>true</PublishAot>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+
+        <ProductName>uclip</ProductName>
+        <ToolCommandName>uclip</ToolCommandName>
+        <Description>Simple clipboard tool that supports UTF8 text. Designed to work much like clip.exe does.</Description>
+        <Version>1.0.0</Version>
+        <Authors>Mino</Authors>
+    </PropertyGroup>
+
+</Project>
